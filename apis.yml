@@ -1,8 +1,24 @@
 aid: timberhub
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/timberhub.png
 name: Timberhub
-description: 'Timberhub is a company surfaced as a portfolio company of creandum, hv-capital, speedinvest
-  and added to the API Evangelist network as a stub for enrichment. Sector: other. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Timberhub is a European B2B timber trading platform that connects buyers
+  with more than 70 sawmills across 28 countries. It offers timber sourcing with 24-hour
+  quotes, built-in EUDR (EU Deforestation Regulation) compliance automation, and AI-powered
+  workflow automation spanning product matching, logistics, and compliance documentation.
+  The company operates a login-gated web application at app.timberhub.com and, as of this
+  enrichment pass, publishes no public developer API, developer portal, OpenAPI, or
+  machine-readable API documentation. Backed by Creandum, HV Capital, and Speedinvest.'
 url: https://raw.githubusercontent.com/api-evangelist/timberhub/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Other
+- Timber
+- Marketplace
+- Supply Chain
+- Sustainability
+- EUDR Compliance
+- B2B Trade
+- Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +47,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/timberhub-domain-security.yml
 - type: Website
   url: https://www.timberhub.com/
+- type: Blog
+  url: https://www.timberhub.com/resources
+- type: SignUp
+  url: https://app.timberhub.com/register
+- type: Login
+  url: https://app.timberhub.com/login
+- type: Support
+  url: https://www.timberhub.com/contact
+- type: TermsOfService
+  url: https://www.timberhub.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.timberhub.com/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
